@@ -9,34 +9,34 @@ import java.util.Map;
 
 @Controller
 public class IndexController {
-    @RequestMapping("/test")
-    public String test(){
-        return "test";
-    }
-
-    @ResponseBody //RestController가 없던 시절 하나하나 찍어줬던 어노테이션
-    @RequestMapping("/test1")
-    public String test1(){
-        return "test1";
-    }
-
-    @RequestMapping("/index") //
-    @ResponseBody //페이지를 리턴해줘야 하는데, JSON 형태로 리턴해주기 위한 코드
-    public String index(){
-        return "11222333";
-    }
-    @RequestMapping("/abc") //
-    @ResponseBody //페이지를 리턴해줘야 하는데, JSON 형태로 리턴해주기 위한 코드
-    public Map<String, Object> abc(){
-        Map<String, Object> map = new HashMap<String, Object>();
-        map.put("11", "22222222222222222222222222222222222222");
-        return map;
-    }
-
-    //일반 컨트롤러 이고, 페이지를 리턴해줄꺼야!!
-    @RequestMapping("/page") //
-    public String page(){
-        return "page";
-    }
+//    @RequestMapping("/test")
+//    public String test(){
+//        return "test";
+//    }
+//
+//    @ResponseBody //RestController가 없던 시절 하나하나 찍어줬던 어노테이션
+//    @RequestMapping("/test1")
+//    public String test1(){
+//        return "test1";
+//    }
+//
+//    @RequestMapping("/index") //
+//    @ResponseBody //페이지를 리턴해줘야 하는데, JSON 형태로 리턴해주기 위한 코드
+//    public String index(){
+//        return "11222333";
+//    }
+//    @RequestMapping("/abc") //
+//    @ResponseBody //페이지를 리턴해줘야 하는데, JSON 형태로 리턴해주기 위한 코드
+//    public Map<String, Object> abc(){
+//        Map<String, Object> map = new HashMap<String, Object>();
+//        map.put("11", "22222222222222222222222222222222222222");
+//        return map;
+//    }
+//
+//    //일반 컨트롤러 이고, 페이지를 리턴해줄꺼야!!
+//    @RequestMapping("/page") //
+//    public String page(){
+//        return "page";
+//    }
 
 }
