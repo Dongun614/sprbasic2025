@@ -26,5 +26,10 @@ public class NoticeController {
         return "notice/" + page;
     }
 
+    @GetMapping("/{page}/{id}") //Pass variable
+    public String page2(@PathVariable String page, @PathVariable String id){
+        return "notice/" + page;
+    }
+
 
 }
