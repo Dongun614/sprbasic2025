@@ -32,4 +32,10 @@ public class NoticeRestController {
         List<Map<String, Object>> resultData = noticeService.list(title, author);
         return resultData;
     }
+
+    @GetMapping("/detail")
+    public Map<String, Object> detail(@RequestParam int id){
+        Map<String, Object> notice = noticeService.detail(id);
+        return notice;
+    }
 }
