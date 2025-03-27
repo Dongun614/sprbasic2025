@@ -45,7 +45,7 @@ public class PostRestController {
         List<Map<String, Object>> resultList = postService.list();
         return resultList;
     }
-//주석
+    
     @GetMapping("/detail/{order}")
     public Map<String, Object> detail(@PathVariable("order") int order){
         Map<String, Object> resultMap = postService.detail(order);
