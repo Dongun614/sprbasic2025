@@ -14,12 +14,13 @@ public class PostRestController {
 //    PostService postService;
 
     private final PostService postService;
+
     public PostRestController(PostService postService) {
         this.postService = postService
     }
 
     @GetMapping("/create")
-    public Map<String, Object> create(@RequestParam String title, @RequestParam String content){
+    public Map<String, Object> create(@RequestParam String title, @RequestParam String content) {
         Map<String, Object> param = new HashMap<>();
         param.put("title", title);
         param.put("content", content);
@@ -29,28 +30,27 @@ public class PostRestController {
     }
 
     @GetMapping("/update/{order}")
-    public Map<String, Object> update(@PathVariable("order") int order, @RequestParam Map<String, Object> param){
+    public Map<String, Object> update(@PathVariable("order") int order, @RequestParam Map<String, Object> param) {
         Map<String, Object> resultMap = postService.update(order, param);
         return resultMap;
     }
 
     @GetMapping("/delete")
-    public Map<String, Object> delete(@RequestParam int order){
+    public Map<String, Object> delete(@RequestParam int order) {
         Map<String, Object> resultMap = postService.delete(order);
         return resultMap;
     }
 
     @GetMapping("/list")
-    public Map<String, Object> list(){
+    public Map<String, Object> list() {
         List<Map<String, Object>> resultList = postService.list();
         return resultList;
     }
-    
+
     @GetMapping("/detail/{order}")
-    public Map<String, Object> detail(@PathVariable("order") int order){
+    public Map<String, Object> detail(@PathVariable("order") int order) {
         Map<String, Object> resultMap = postService.detail(order);
         return resultMap;
     }
 
 }
-//test
