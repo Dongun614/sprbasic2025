@@ -40,7 +40,7 @@ public class PostRestController {
         Map<String, Object> resultMap = postService.delete(order);
         return resultMap;
     }
-//Getmapping
+
     @GetMapping("/list")
     public Map<String, Object> list() {
         List<Map<String, Object>> resultList = postService.list();
