@@ -60,7 +60,7 @@ public class BoardRestController {
         resultMap.put("status", resultCode);
         return resultMap;
     }
-
+//request
 
     @GetMapping("/delete")
     public Map<String, Object> delete(@RequestParam int order){
