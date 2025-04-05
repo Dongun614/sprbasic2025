@@ -60,7 +60,7 @@ public class BoardRestController {
         resultMap.put("status", resultCode);
         return resultMap;
     }
-//동ㄱ
+
     @GetMapping("/delete")
     public Map<String, Object> delete(@RequestParam int order){
         int resultCode = 0; //이거 0으로 시작하는 이유가 뭐지
