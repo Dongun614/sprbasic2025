@@ -43,7 +43,7 @@ public class NoticeServiceImpl implements NoticeService {
                     //returnList.add(each);
                 }
             }
-
+//author if문 구현
             if(author != null & !author.isEmpty()){
                 if(eachAuthor.contains(author)){
                     needToAdd = true;
