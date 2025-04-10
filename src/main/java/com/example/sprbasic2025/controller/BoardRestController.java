@@ -46,7 +46,7 @@ public class BoardRestController {
             //이미 지워진 글
             return null;
         }
-//제목 받아오기
+
         String title = (String) param.get("title");
         if(title != null){
             board.put("title", title);
