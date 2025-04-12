@@ -49,7 +49,6 @@ public class NoticeServiceImpl implements NoticeService {
                     //returnList.add(each);
                 }
             }
-//ㅅㄷㄴㅅ
             if(needToAdd){
                 returnList.add(each);
             }
