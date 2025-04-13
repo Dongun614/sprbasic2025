@@ -48,7 +48,7 @@ public class NoticeServiceImpl implements NoticeService {
                     needToAdd = true;
                     //returnList.add(each);
                 }
-            }
+            } //dlkf
             if(needToAdd){
                 returnList.add(each);
             }
